@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript on steroids</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+    <div class="container-1">
+           <h2>Challange 1: Your age in days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">reset</button>
+            </div> 
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Challange 2: Cat generator</h2>
+            <button class="btn btn-success" id="Cat-generator" onclick="generateCat()">Generate Cat</button>
+        <div  class="flex-box-container-2" id="flex-cat-gen">
+         </div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challange 3: Rock, Paper, Scissers</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="./static/images/rocks.png" height=150px width="150px" onclick="rpsGame(this)" alt="">
+            <img id="paper" src="./static/images/paper.png" height=150px width="150px" onclick="rpsGame(this)" alt="">
+            <img id="Scissers" src="./static/images/scisser.png" height=150px width="150px" onclick="rpsGame(this)" alt="">
+        </div>
+    </div>
+
+   <script src="./static/js/script.js"></script> 
+</body>
+</html>
